@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align content to the top */
+            align-items: flex-start; /* Align content to the left */
+        }
+          .sidebar {
+            width: 12 0%;
+            padding: 10;
+        }
+        .content {
+            width: 100%;
+            padding: 0;
+            margin-left: 20px; /* Add margin to move the content closer to the sidebar */
+        }
+        .iframe-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 400px); /* Set a fixed width for both iframes */
+            gap: 10px; /* Adjust the gap as needed */
+            justify-content: center;
+        }
+
+        .speakerdeck-iframe {
+            width: 450px; /* Set a fixed width for the SpeakerDeck iframe */
+            height: 400px; /* Set a fixed height for the SpeakerDeck iframe */
+            display: block;
+            margin-right: 12px; /* Add margin to move the iframes closer together */
+        }
+
+        .vimeo-iframe {
+            width: 600px; /* Adjust the width to make the Vimeo iframe slightly bigger */
+            height: 400px; /* Set a fixed height for the Vimeo iframe */
+            display: block;
+        }
+
+        h1 {
+            margin: 0; /* Remove any default margin on the heading */
+        }
+    </style>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>your name</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="CharacterDesign.html">Character Design</a></li>
+                <li><a href="Story.html">Story</a></li>
+                <li><a href="Animation.html">Animation</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+                <li><a href="mailto:">Email</a></li>
+                <!-- Social Links -->
+                <div class="social-links">
+                  <div>
+		    <a> 
+                        <a class="social-link" href="https://www.instagram.com/">
+                            <img src="insta.png" alt="Instagram">
+                            <a class="social-link" href="twitter.com/">
+                            <img src="twitter.png" alt="Instagram">
+                           <a class="social-link" href="linkedin.com/in/">
+                            <img src="linkedin.png" alt="Instagram">
+
+			   </a>
+
+                            </div>
+                    
+                            <div class="video-container">
+                            </ul>
+                        </div>
+                        <!-- First section -->
+                        <div class="content">
+            <h1> - Story Portfolio</h1>
+            <h1>Title</h1>
+            <div class="iframe-grid">
+                <iframe class="vimeo-iframe" title="vimeo-player" src="" frameborder="0" allowfullscreen></iframe>
+                <iframe class="speakerdeck-iframe" src=""></iframe>
+            </div>
+        </div>
+        <!-- Second section -->
+        <div class="content">
+            <h1>title</h1>
+            <div class="iframe-grid">
+                <iframe class="vimeo-iframe" title="vimeo-player" src="https://player.vimeo.com/video/" frameborder="0" allowfullscreen></iframe>
+                <iframe class="speakerdeck-iframe" src="https://speakerdeck.com/"></iframe>
+            </div>
+        </div>
+        
+        <!-- Third section -->
+        <div class="content">
+            <h1>Chicken in Space</h1>
+            <div class="iframe-grid">
+                <iframe class="vimeo-iframe" title="vimeo-player" src="https://player.vimeo.com/video/" frameborder="0" allowfullscreen></iframe>
+                <iframe class="speakerdeck-iframe" src="https://speakerdeck.com/player/"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
